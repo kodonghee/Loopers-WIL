@@ -30,6 +30,7 @@
 	•	예를 들어, 좋아요 이벤트의 경우:
 	1.	LikeCreatedEvent(user-1, product-1001)
 	2.	LikeCancelledEvent(user-1, product-1001)
+
 → 이 순서가 보장되어야 최종 상태가 “좋아요 없음”으로 맞게 처리된다.
 → 만약 순서가 뒤바뀌면 최종 상태가 “좋아요 있음”으로 잘못될 수 있다.
 
